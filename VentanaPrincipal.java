@@ -9,6 +9,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
+import java.util.ArrayList;
 
 public class VentanaPrincipal extends JFrame implements ActionListener {
     
@@ -27,8 +28,9 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
     private JButton asignar;
     private JButton cancelar;
     // incidencias y tecnicos    
-    private Incidencia[] incidencias = new Incidencia[5];   
+    private Incidencia[] incidencias = new Incidencia[5];
     private Tecnico[] tecnicos = new Tecnico[2];
+    
     //ventana informe
     private VentanaInforme ventanaInforme;
     
