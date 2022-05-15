@@ -9,7 +9,6 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-import java.util.ArrayList;
 
 public class VentanaPrincipal extends JFrame implements ActionListener {
     
@@ -72,8 +71,8 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
     public void initComponentes() {
 
         // Creación de controles gráficos
-        selectIncidencias = new JComboBox("Incidencias");
-        selectTecnicos = new JComboBox("Tecnicos");
+        selectIncidencias = new JComboBox();
+        selectTecnicos = new JComboBox();
         infoIncidencia = new JLabel("Información de la incidencia");
         informes = new JButton("Informes");
         incidenciaId = new JLabel("ID");
@@ -85,6 +84,15 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
         actualizar = new JButton("Actualizar");
         asignar = new JButton("Asignar");
         cancelar = new JButton("Cancelar");
+
+        //Se añaden los elementos de los comboBox		
+        for (Incidencia i : incidencias) {
+            selectIncidencias.addItem(i.getId());
+        }
+        for (Tecnico t : tecnicos) {
+            selectTecnicos.addItem(t.getNombre());
+        }
+        
         // Dimensionamos la ventana principal
         this.setSize(600, 300);
         // Posicionamos la ventana en la pantalla
