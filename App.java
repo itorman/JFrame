@@ -25,7 +25,7 @@ public class App {
         // System.out.println(incidencia.toString());
         // System.out.println(incidencia2.toString());
         //crea una ventanaPrincipal
-        VentanaPrincipal ventanaInforme = new VentanaPrincipal();
+        VentanaPrincipal ventanaPrincipal = new VentanaPrincipal();
         
 
     }

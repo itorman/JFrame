@@ -71,8 +71,8 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
     public void initComponentes() {
 
         // Creación de controles gráficos
-        selectIncidencias = new JComboBox();
-        selectTecnicos = new JComboBox();
+        selectIncidencias = new JComboBox<String>();
+        selectTecnicos = new JComboBox<String>();
         infoIncidencia = new JLabel("Información de la incidencia");
         informes = new JButton("Informes");
         incidenciaId = new JLabel("ID");
